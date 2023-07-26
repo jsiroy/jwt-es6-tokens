@@ -5,24 +5,29 @@ const jwt = require('jsonwebtoken');
 
 app.use(express.json())
 
-const posts = [
+const userAccess = [
     {
         username: 'Kyle',
-        title: 'Post 1'
+        role: 'Admin'
     },
     {
         username: 'Jim',
-        title: 'Post 2'
+        role: 'Supervisor'
+    },
+    {
+        username: 'Joe',
+        role: 'Processor'
     }
 ]
-app.get('/posts', authenticateToken, (req,res) => {
-   res.json(posts.filter(user => user.username === req.user.name))
+
+app.get('/user-access', authenticateToken, (req,res) => {
+   res.json(userAccess.filter(user => user.username === req.user.name))
 })
 
 app.post('/login',(req,res) => {
    /// authencticate the user 
    const userName = req.body.username;
-   const validateUser = posts.find( user => user.username === userName );
+   const validateUser = userAccess.find( user => user.username === userName );
        console.log(validateUser);
        if(validateUser){
        const user = { name: userName }

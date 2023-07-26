@@ -1,5 +1,5 @@
-GET http://localhost:3000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjkwMzAyOTkyLCJleHAiOjE2OTAzMDMwMDd9.CIu3KBVCBfCi0zEzOtfHb99YuUor5IlT_ZqLqtYBlD0
+GET http://localhost:3000/user-access
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTY5MDMzNjM3NywiZXhwIjoxNjkwMzM2MzkyfQ.dJwM9sn5gLpbe-Qf2sTapQEkglsAb-aFcwTXlG5_HxE
 
 ###
 
@@ -8,7 +8,7 @@ Content-Type: application/json
 
 {
     "token": 
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjkwMzAyOTcyfQ.VWVODGzhUNDEcbUbj2up_DrsjGds5dQ3do6r8h1Hx34"
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTY5MDMzNjMzMn0.bJ7IUF-l3k3i6JNdKIgURz513i3hYjnXWeWVvivymn4"
 }
 
 ###
@@ -18,7 +18,7 @@ Content-Type: application/json
 
 {
     "token": 
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjkwMzAyOTcyfQ.VWVODGzhUNDEcbUbj2up_DrsjGds5dQ3do6r8h1Hx34"
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTY5MDMzNjMzMn0.bJ7IUF-l3k3i6JNdKIgURz513i3hYjnXWeWVvivymn4"
 }
 
 ###
@@ -27,5 +27,5 @@ POST http://localhost:4000/login
 Content-Type: application/json
 
 {
-    "username": "Jim"
+    "username": "Kyle"
 }
